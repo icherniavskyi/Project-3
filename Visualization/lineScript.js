@@ -10,7 +10,7 @@ fetch('http://127.0.0.1:5000/')
         var traceAsthma = {
             x: asthmaData.map(item => item.State),
             y: asthmaData.map(item => item.Condition_Prevalence_Percent),
-            mode: 'lines+markers',
+            mode: 'markers',
             type: 'scatter',
             name: 'Current Asthma'
         };
@@ -19,7 +19,7 @@ fetch('http://127.0.0.1:5000/')
         var traceObesity = {
             x: obesityData.map(item => item.State),
             y: obesityData.map(item => item.Condition_Prevalence_Percent),
-            mode: 'lines+markers',
+            mode: 'markers',
             type: 'scatter',
             name: 'Obesity'
         };
@@ -28,7 +28,7 @@ fetch('http://127.0.0.1:5000/')
         var traceDepression = {
             x: depressionData.map(item => item.State),
             y: depressionData.map(item => item.Condition_Prevalence_Percent),
-            mode: 'lines+markers',
+            mode: 'markers',
             type: 'scatter',
             name: 'Depression'
         };
@@ -37,7 +37,7 @@ fetch('http://127.0.0.1:5000/')
         var traceAQI = {
             x: data.map(item => item.State),
             y: data.map(item => item.Median_AQI),
-            mode: 'lines',
+            mode: 'markers',
             type: 'scatter',
             name: 'Median AQI',
             yaxis: 'y2'
@@ -46,7 +46,7 @@ fetch('http://127.0.0.1:5000/')
         var traceClearDays = {
             x: data.map(item => item.State),
             y: data.map(item => item.Percent_Clear_Days),
-            mode: 'lines',
+            mode: 'markers',
             type: 'scatter',
             name: 'Percent Clear Days',
             yaxis: 'y2'
@@ -55,7 +55,7 @@ fetch('http://127.0.0.1:5000/')
         var traceTemp = {
             x: data.map(item => item.State),
             y: data.map(item => item.Average_Temperature_F),
-            mode: 'lines',
+            mode: 'markers',
             type: 'scatter',
             name: 'Average Temperature',
             yaxis: 'y2'
